@@ -1,0 +1,29 @@
+#container{
+    width: 1200px;
+    display: flex;
+     flex-wrap: wrap;
+     margin: 100px auto;
+}
+header{
+    width: 100%;
+    background: blue;
+    height: 50px;
+
+}
+nav{
+    width: 100%;
+    background: pink;
+    height: 50px;
+    border-bottom: solid 15px blue;
+}
+main{
+    width: 100%;
+    background: yellow;
+    height: 350px;
+    border: solid white 20px;
+}
+footer{
+    background: blue;
+    width: 100%;
+    height: 60px;
+}
