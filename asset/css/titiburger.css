@@ -74,7 +74,7 @@ p{
 }
 .calltoaction{
     padding: 11px 21px;
-    background-color: pink;
+    background-color: #D95032;
     border-radius: 4px;
     color: rgb(7, 6, 6);
     text-decoration: none;
@@ -164,10 +164,77 @@ main{
     color: #000000;
     margin-top: 20px;
 }
-.burger{
+.Nosburgers{
     height: 200px;
-    width: 35%;
-    background-color: #307326;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
 }
 
+.Nosburgers img{
+    height: 200px;
+    margin: 0px 0px 0px 30px;
+}
 
+.Nosburgers-gauche{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.Nosburgers-droite{
+    display: flex;
+    height: 300px;
+    width: 70%;
+}
+
+h1{
+    font-size: 48px;
+    color: #8C6F56;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-size: 24px;
+    color: #307326;
+    font-family: 'Syne', sans-serif;
+}
+.actu{
+    margin-top: 80px;
+    width: 100%;
+}
+.article{
+    display: flex;
+    margin-left: 150px;
+}
+.actu h1{
+    text-align: center;
+}
+.actu h2{
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin: 30px 0px 0px 130px;
+}
+.actu img{
+    margin: 30px 0px 0px 90px;
+    height: 200px;
+}
+.newsletter{
+    height: 194px;
+    width: 1300px;
+    background-color: #8C6F56;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 4px;
+}
+.offre{
+    height: 50px;
+    width: 30%;
+}
+.offre p{
+    color: #000000;
+    font-size: 32px;
+    margin-top: 60px;
+    text-indent : 5%;
+    padding-top: 50px;
+}
