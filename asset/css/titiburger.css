@@ -55,10 +55,10 @@ h2{
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
     color: #8C6F56;
-    text-align: left;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 60px;
 
 }
 p{
@@ -81,7 +81,7 @@ p{
     
 }
 header{
-    height: 80vh;
+    height: 70vh;
     background: url(../img/fond.svg) no-repeat;
     background-size: cover;
     background-position: top;
@@ -115,13 +115,34 @@ header{
 }
 
 nav{
-    margin-top: 20px;
-
+    margin-top: 0px;
 }
+nav::after {
+    content: "";
+    height: 150px;
+    width: 150px;
+    background: radial-gradient(
+      circle closest-side,
+      rgba(255, 255, 255, 0.69),
+      transparent
+    );
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: var(--x);
+    top: var(--y);
+    border-radius: 150px;
+    transition: 0.25s;
+    z-index: 20;
+    opacity: 0;
+    left: var(--x);
+    top: var(--y);
+  }
+  nav:hover::after {
+    opacity: 1;
+  }
+
 nav ul{
     display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
 }
 
 nav a{
@@ -142,10 +163,10 @@ main{
 .description{
     width: 1440px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .resto{
     width: 35%;
-    text-align: center;
 }
 .h2 .description{
     margin-left: 10%;
@@ -165,21 +186,24 @@ main{
     margin-top: 20px;
 }
 .Nosburgers{
-    height: 200px;
-    width: 100%;
-    margin-top: 80px;
+    height: 400px;
+    width: calc(100%-100px);
+    padding-top: 90px;
     display: flex;
+    padding-right: 100px;
 }
 
 .Nosburgers img{
-    height: 200px;
-    margin: 0px 0px 0px 30px;
+    height: 250px;
+    margin: 0px 30px 0px 30px;
 }
 
 .Nosburgers-gauche{
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .Nosburgers-droite{
@@ -199,12 +223,11 @@ p{
     font-family: 'Syne', sans-serif;
 }
 .actu{
-    margin-top: 80px;
     width: 100%;
 }
 .article{
     display: flex;
-    margin-left: 150px;
+
 }
 .actu h1{
     text-align: center;
@@ -216,8 +239,9 @@ p{
     margin: 30px 0px 0px 130px;
 }
 .actu img{
-    margin: 30px 0px 0px 90px;
-    height: 200px;
+    margin: auto ;
+    margin-top: 50px;
+    height: 250px;
 }
 .newsletter{
     height: 194px;
@@ -237,4 +261,30 @@ p{
     margin-top: 60px;
     text-indent : 5%;
     padding-top: 50px;
+}
+.slick-next:before, .slick-prev:before {
+    background-color: rgb(198, 48, 48);
+    border-radius: 9px;
+}
+/*Footer*/
+footer {
+    height: 300px;
+    background: #D95032;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.one, .two, .three, .maps {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+a{
+    margin: 30px;
+    color: white;
+}
+.maps{
+    height: 200px;
+    width: 300px;
 }
