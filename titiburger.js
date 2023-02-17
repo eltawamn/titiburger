@@ -4,6 +4,7 @@ $('.Nosburgers-droite').slick({
     slidesToScroll: 3
   });
 
-window.addEventListener("mousemove", (e) => {
+  //set property
+window.addEventListener('mousemove', (e) => {
   nav.style.setProperty("--x", e.layerX + "px");
 });
